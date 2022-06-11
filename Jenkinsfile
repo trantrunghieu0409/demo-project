@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 pipeline {
     agent any 
     stages {
@@ -8,8 +9,8 @@ pipeline {
         }
         stage('build') {
             steps {
-                javac HelloWorld.java
-                java HelloWorld
+                javac 'HelloWorld.java'
+                java 'HelloWorld'
             }
         }
         stage('testing') {
