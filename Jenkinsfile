@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage ('hello') {
+            steps {
+                echo 'HelloWorld'
+            }
+        }
         stage('build') {
             steps {
                 javac HelloWorld.java
