@@ -9,8 +9,8 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'javac HelloWorld.java'
-                sh 'java HelloWorld'
+                bat 'javac HelloWorld.java'
+                bat 'java HelloWorld'
             }
         }
         stage('testing') {
